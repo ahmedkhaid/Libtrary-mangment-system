@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libtrary mangment", "Libtrary mangment\Libtrary mangment.csproj", "{60DFB2B0-6C1A-4F10-A67C-0552A03CA268}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60DFB2B0-6C1A-4F10-A67C-0552A03CA268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DFB2B0-6C1A-4F10-A67C-0552A03CA268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DFB2B0-6C1A-4F10-A67C-0552A03CA268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DFB2B0-6C1A-4F10-A67C-0552A03CA268}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C232EB32-5712-433D-AAEA-CF02A3BF7EED}
+	EndGlobalSection
+EndGlobal
