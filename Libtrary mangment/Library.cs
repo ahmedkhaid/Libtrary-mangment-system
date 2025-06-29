@@ -50,26 +50,30 @@ namespace Libtrary_mangment
 
         }
         public void RemoveBook(Book a) {
-            
-            int indexofremovedBook=Array.IndexOf(books, a);
-            if (indexofremovedBook==-1)
-            { Console.WriteLine("the book not found");
-                return;
-            }
-            if(indexofremovedBook==currentBook-1)
+            int indexofremovedBook;
+            for (int i=0;i<currentBook;i++)
             {
-                books[indexofremovedBook] = null;
-                currentBook--;
-            }
-            else
-            {
-                for (int i = indexofremovedBook; i < currentBook-1; i++)
+                if (books[i].title==a.title)
                 {
-                    books[i] = books[i + 1]; //
+                     indexofremovedBook = i;//getting the index of the book to remove
+
+                    if (indexofremovedBook == currentBook - 1)
+                    {
+                        books[indexofremovedBook] = null;
+                        currentBook--;
+                    }
+                    else
+                    {
+                        for (int j = indexofremovedBook; j < currentBook - 1; j++)
+                        {
+                            books[j] = books[j + 1]; //
+                        }
+                        books[currentBook - 1] = null;//clear the last duplicate value
+                        currentBook--;
+                    }
                 }
-                books[currentBook-1] = null;//clear the last duplicate value
-                currentBook--;
             }
+          
         }
         public void borrwodBook(Book book)
         {
